@@ -14,9 +14,9 @@ export default class extends Base {
      // let m = this.success(data);
      var xx = JSON.stringify(data);
      this.assign({
-       title: "house_wxr",
+       title: "banpai",
        css: "index",
-       js:xx
+       js:"index"
      });
      let n = this.display();
      return n;
@@ -25,5 +25,21 @@ export default class extends Base {
    async moreAction() {
      let data = await this.model('user').select();
      return this.success(data);
+   }
+
+   async ppAction() {
+     let data = await this.model('user').select();
+     return this.end(data);
+   }
+
+   async addAction(){
+     var num = this.post('id');
+     console.log(num);
+     let banpai = {
+       banpai: 11
+     }
+     let data = await this.model('user').select();
+     let result = await this.model('user').add({banpai:num});
+     this.success(data);
    }
 }

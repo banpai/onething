@@ -12,8 +12,8 @@ export default {
       host: '127.0.0.1',
       port: '3307',
       database: 'test',
-      user: '',
-      password: '',
+      user: 'root',
+      password: 'root',
       prefix: 'think_',
       encoding: 'utf8'
     },

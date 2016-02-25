@@ -21,7 +21,23 @@
       n;return _regenerator2.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return this.model('user').select();case 2:data = _context.sent; //auto render template file index_index.html
               // return this.success("haha");
               // let m = this.success(data);
-              xx = (0, _stringify2.default)(data);this.assign({ title: "house_wxr", css: "index", js: xx });n = this.display();return _context.abrupt('return', n);case 7:case 'end':return _context.stop();}}}, _callee, this);}));return function indexAction() {return ref.apply(this, arguments);};}();_class.prototype.
+              xx = (0, _stringify2.default)(data);this.assign({ title: "banpai", css: "index", js: "index" });n = this.display();return _context.abrupt('return', n);case 7:case 'end':return _context.stop();}}}, _callee, this);}));return function indexAction() {return ref.apply(this, arguments);};}();_class.prototype.
   moreAction = function () {var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {var 
       data;return _regenerator2.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return this.model('user').select();case 2:data = _context2.sent;return _context2.abrupt('return', 
-              this.success(data));case 4:case 'end':return _context2.stop();}}}, _callee2, this);}));return function moreAction() {return ref.apply(this, arguments);};}();return _class;}(_base2.default);exports.default = _class;
+              this.success(data));case 4:case 'end':return _context2.stop();}}}, _callee2, this);}));return function moreAction() {return ref.apply(this, arguments);};}();_class.prototype.
+
+
+  ppAction = function () {var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3() {var 
+      data;return _regenerator2.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:_context3.next = 2;return this.model('user').select();case 2:data = _context3.sent;return _context3.abrupt('return', 
+              this.end(data));case 4:case 'end':return _context3.stop();}}}, _callee3, this);}));return function ppAction() {return ref.apply(this, arguments);};}();_class.prototype.
+
+
+  addAction = function () {var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4() {var 
+      num, 
+
+      banpai, 
+
+
+      data, 
+      result;return _regenerator2.default.wrap(function _callee4$(_context4) {while (1) {switch (_context4.prev = _context4.next) {case 0:num = this.post('id');console.log(num);banpai = { banpai: 11 };_context4.next = 5;return this.model('user').select();case 5:data = _context4.sent;_context4.next = 8;return this.model('user').add({ banpai: num });case 8:result = _context4.sent;
+              this.success(data);case 10:case 'end':return _context4.stop();}}}, _callee4, this);}));return function addAction() {return ref.apply(this, arguments);};}();return _class;}(_base2.default);exports.default = _class;

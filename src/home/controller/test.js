@@ -9,16 +9,11 @@ export default class extends Base {
    */
   indexAction(){
     //auto render template file index_index.html
-
+    this.assign({
+      title: "markdown",
+      css: "test",
+      js:"test"
+    });
     return this.display('test');
   }
 }
-
-// export default class extends think.controller.base {
-//   * listAction(){
-//     let model = this.model("user");
-//     let data = yield model.where({name: "thinkjs"}).find();
-//     //data returns {name: "thinkjs", email: "admin@thinkjs.org", ...}
-//     return data;
-//   }
-// }

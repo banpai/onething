@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>test</title>
-</head>
-<body>
-  <h1>hahahh</h1>
-  <script type="text/javascript">
-    var xx = function(){
-      alert("BB");
-    };
-    xx();
-  </script>
-</body>
-</html>
+<%include inc/top.html%>
+  <script src="static/js/inc/vue.js" charset="utf-8"></script>
+  <script src="static/js/inc/marked.min.js" charset="utf-8"></script>
+  <div id="editor">
+    <textarea v-model="input" debounce="300"></textarea>
+    <div v-html="input | marked"></div>
+  </div>
+  <script src="static/js/<%= js%>.js" charset="utf-8"></script>
+<%include inc/footer.html%>

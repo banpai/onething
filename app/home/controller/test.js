@@ -9,17 +9,9 @@
    */_class.prototype.
   indexAction = function indexAction() {
     //auto render template file index_index.html
+    this.assign({ 
+      title: "markdown", 
+      css: "test", 
+      js: "test" });
 
-    return this.display('test');};return _class;}(_base2.default);
-
-
-
-// export default class extends think.controller.base {
-//   * listAction(){
-//     let model = this.model("user");
-//     let data = yield model.where({name: "thinkjs"}).find();
-//     //data returns {name: "thinkjs", email: "admin@thinkjs.org", ...}
-//     return data;
-//   }
-// }
-exports.default = _class;
+    return this.display('test');};return _class;}(_base2.default);exports.default = _class;
